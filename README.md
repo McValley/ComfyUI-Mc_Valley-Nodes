@@ -29,14 +29,23 @@ All interactive nodes feature responsive Cyberpunk canvas styling, locked UI dim
 
 ---
 
-## Installation
+Markdown
+## 🚀 Installation
 
-Open a terminal inside your ComfyUI custom nodes directory:
+1. Open a terminal inside your ComfyUI custom nodes directory:
+   ```bash
+   cd ComfyUI/custom_nodes
+   ```
 
-cd ComfyUI/custom_nodes
-git clone https://github.com/McValley/ComfyUI-Mc_Valley-Nodes.git
+2. Clone the repository:
+   ```bash
+   git clone [https://github.com/MCvalley/ComfyUI-Mc_Valley-Nodes.git](https://github.com/MCvalley/ComfyUI-Mc_Valley-Nodes.git)
+   ```
 
-Install package requirements:
-pip install -r requirements.txt
+3. Install package requirements:
+   ```bash
+   cd ComfyUI-Mc_Valley-Nodes
+   pip install -r requirements.txt
+   ```
 
-Restart ComfyUI and refresh your browser (Ctrl + F5).
+4. Restart ComfyUI and refresh your browser (`Ctrl + F5`).
