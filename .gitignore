@@ -1,0 +1,30 @@
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary preview images and exports
+mcvalley_*.png
+clean_images/
+temp/
+
+# Downloaded models or neural translation weights
+models/prompt_translation/
+*.bin
+*.safetensors
+*.pth
+*.onnx
+
+# OS & Desktop metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

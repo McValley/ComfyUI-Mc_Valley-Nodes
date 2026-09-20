@@ -1,0 +1,254 @@
+.mcvalley-stacker-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: radial-gradient(circle at 50% 0%, #062334 0%, #020a11 100%);
+    border: 1px solid #00e5ff;
+    box-shadow: 0 0 16px rgba(0, 229, 255, 0.25), inset 0 0 20px rgba(0, 0, 0, 0.9);
+    border-radius: 9px;
+    padding: 12px;
+    margin: 4px auto 8px auto;
+    user-select: none;
+    box-sizing: border-box;
+    width: 430px;
+    transition: all 0.25s ease;
+}
+
+.mcvalley-stacker-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0, 229, 255, 0.25);
+    width: 100%;
+}
+
+.mcvalley-stacker-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mcvalley-stacker-title {
+    font-family: 'Segoe UI', monospace, sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    color: #00e5ff;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+}
+
+.mcvalley-clear-all-btn {
+    background: rgba(255, 0, 85, 0.12);
+    border: 1px solid #ff0055;
+    color: #ff3377;
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-family: monospace;
+    font-size: 8.5px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mcvalley-clear-all-btn:hover {
+    background: #ff0055;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 0, 85, 0.8);
+}
+
+.mcvalley-stacker-bypass-banner {
+    display: none;
+    width: 100%;
+    padding: 3px 0;
+    margin-top: 2px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 8.5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.mcvalley-layers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 100%;
+}
+
+.mcvalley-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 26px 10px;
+    gap: 4px;
+    color: #4a7788;
+    font-family: monospace;
+    font-size: 9.5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px dashed rgba(0, 229, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.mcvalley-empty-state small {
+    font-size: 8px;
+    color: #2b5563;
+}
+
+.mcvalley-layer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: rgba(3, 15, 23, 0.85);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 6px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.mcvalley-layer-card:hover {
+    border-color: #00e5ff;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.2);
+}
+
+.mcvalley-layer-topbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.mcvalley-layer-index {
+    font-family: monospace;
+    font-size: 9.5px;
+    font-weight: bold;
+    color: #00e5ff;
+    min-width: 24px;
+}
+
+.mcvalley-layer-title-input {
+    flex: 1;
+    background: #02070c;
+    border: 1px solid rgba(0, 229, 255, 0.35);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-family: 'Segoe UI', monospace, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #90ebff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.mcvalley-layer-title-input:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 6px rgba(0, 229, 255, 0.4);
+}
+
+.mcvalley-layer-del-btn {
+    background: #140507;
+    border: 1px solid #ff0055;
+    color: #ff0055;
+    border-radius: 4px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.mcvalley-layer-del-btn:hover {
+    background: #ff0055;
+    color: #ffffff;
+    box-shadow: 0 0 8px #ff0055;
+}
+
+/* Área de texto más espaciosa */
+.mcvalley-layer-textarea {
+    width: 100%;
+    height: 70px;
+    background: #010408;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    padding: 8px;
+    font-family: monospace;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #e0faff;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.mcvalley-layer-textarea:focus {
+    border-color: rgba(0, 229, 255, 0.6);
+}
+
+.mcvalley-add-layer-btn {
+    width: 100%;
+    padding: 9px 0;
+    margin-top: 2px;
+    background: #04121a;
+    border: 1px dashed #00e5ff;
+    border-radius: 6px;
+    color: #00e5ff;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.mcvalley-add-layer-btn:hover {
+    background: rgba(0, 229, 255, 0.15);
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+    border-style: solid;
+}
+
+/* Modo Bypass Púrpura */
+.mcvalley-stacker-container.mcvalley-bypassed {
+    background: radial-gradient(circle at 50% 0%, #1e0a24 0%, #09020d 100%) !important;
+    border: 1px solid #9333ea !important;
+    box-shadow: 0 0 16px rgba(147, 51, 234, 0.35), inset 0 0 20px rgba(0, 0, 0, 0.95) !important;
+}
+
+.mcvalley-stacker-container.mcvalley-bypassed .mcvalley-stacker-header {
+    border-bottom: 1px solid rgba(168, 85, 247, 0.35) !important;
+}
+
+.mcvalley-stacker-container.mcvalley-bypassed .mcvalley-stacker-title {
+    color: #d8b4fe !important;
+    text-shadow: 0 0 10px rgba(192, 132, 252, 0.7) !important;
+}
+
+.mcvalley-stacker-container.mcvalley-bypassed .mcvalley-clear-all-btn {
+    opacity: 0.3 !important;
+    pointer-events: none !important;
+}
+
+.mcvalley-stacker-container.mcvalley-bypassed .mcvalley-stacker-bypass-banner {
+    display: block !important;
+    background: rgba(147, 51, 234, 0.2) !important;
+    border: 1px solid #a855f7 !important;
+    color: #f3e8ff !important;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.4) !important;
+}
+
+.mcvalley-stacker-container.mcvalley-bypassed .mcvalley-layers-list,
+.mcvalley-stacker-container.mcvalley-bypassed .mcvalley-add-layer-btn {
+    opacity: 0.25 !important;
+    pointer-events: none !important;
+}

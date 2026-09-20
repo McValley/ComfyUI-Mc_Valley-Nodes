@@ -1,0 +1,5 @@
+psutil
+transformers
+sentencepiece
+safetensors
+Pillow
