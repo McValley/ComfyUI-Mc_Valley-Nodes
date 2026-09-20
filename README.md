@@ -39,7 +39,7 @@ Markdown
 
 2. Clone the repository:
    ```bash
-   git clone [https://github.com/MCvalley/ComfyUI-Mc_Valley-Nodes.git](https://github.com/MCvalley/ComfyUI-Mc_Valley-Nodes.git)
+   git clone https://github.com/McValley/ComfyUI-Mc_Valley-Nodes.git
    ```
 
 3. Install package requirements:
