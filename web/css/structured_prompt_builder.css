@@ -1,0 +1,127 @@
+.mcvalley-prompt-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: radial-gradient(circle at 50% 0%, #062334 0%, #020a11 100%);
+    border: 1px solid #00e5ff;
+    box-shadow: 0 0 16px rgba(0, 229, 255, 0.2), inset 0 0 18px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 4px auto 0 auto;
+    box-sizing: border-box;
+    width: 380px;
+    user-select: none;
+    transition: all 0.25s ease;
+}
+
+.mcvalley-prompt-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #03131c;
+    border: 1px solid rgba(0, 229, 255, 0.35);
+    border-radius: 6px;
+    padding: 6px 8px;
+}
+
+.mcvalley-prompt-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.mcvalley-card-title-input {
+    background: #01080d;
+    border: 1px solid rgba(0, 229, 255, 0.4);
+    border-radius: 4px;
+    color: #00f0ff;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 6px;
+    width: 75%;
+    outline: none;
+}
+
+.mcvalley-card-title-input:focus {
+    border-color: #00f0ff;
+    box-shadow: 0 0 6px rgba(0, 240, 255, 0.5);
+}
+
+.mcvalley-card-delete-btn {
+    background: rgba(255, 0, 85, 0.15);
+    border: 1px solid rgba(255, 0, 85, 0.5);
+    color: #ff3377;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px 7px;
+    transition: background 0.2s ease;
+}
+
+.mcvalley-card-delete-btn:hover {
+    background: rgba(255, 0, 85, 0.4);
+    color: #ffffff;
+}
+
+.mcvalley-card-textarea {
+    background: #01080d;
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    border-radius: 4px;
+    color: #d8f5ff;
+    font-family: monospace;
+    font-size: 10px;
+    padding: 5px;
+    min-height: 48px;
+    resize: vertical;
+    outline: none;
+}
+
+.mcvalley-card-textarea:focus {
+    border-color: #00e5ff;
+}
+
+.mcvalley-add-btn {
+    background: #00e5ff;
+    border: none;
+    border-radius: 5px;
+    color: #01131a;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.mcvalley-add-btn:hover {
+    background: #5cf0ff;
+}
+
+.mcvalley-add-btn:active {
+    transform: scale(0.98);
+}
+
+/* Modo Bypass (Ctrl + B) */
+.mcvalley-prompt-container.mcvalley-bypassed {
+    background: radial-gradient(circle at 50% 0%, #1e0a24 0%, #09020d 100%) !important;
+    border: 1px solid #9333ea !important;
+    box-shadow: 0 0 16px rgba(147, 51, 234, 0.3) !important;
+}
+
+.mcvalley-prompt-container.mcvalley-bypassed .mcvalley-card-title-input {
+    color: #d8b4fe !important;
+    border-color: rgba(168, 85, 247, 0.4) !important;
+}
+
+.mcvalley-prompt-container.mcvalley-bypassed .mcvalley-add-btn {
+    background: #9333ea !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 10px rgba(147, 51, 234, 0.5) !important;
+}

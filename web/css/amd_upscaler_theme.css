@@ -1,0 +1,341 @@
+/* ==========================================================================
+ *  MC_VALLEY RDNA NEURAL FRAME REFINER — RACK HARDWARE THEME
+ *  ========================================================================== */
+
+.mcv-rdna-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 9px !important;
+    padding: 12px 14px !important;
+    background: radial-gradient(circle at 50% 0%, #1a030c 0%, #070104 100%) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 46, 99, 0.45) !important;
+    box-shadow: 0 0 24px rgba(255, 46, 99, 0.2), inset 0 0 16px rgba(0, 0, 0, 0.8) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    user-select: none !important;
+    transition: opacity 0.25s ease, filter 0.25s ease !important;
+}
+
+/* Bypass moderado: desactiva interacciones y atenúa sin perder la lectura del HUD */
+.mcv-rdna-bypassed {
+    opacity: 0.55 !important;
+    filter: grayscale(0.4) brightness(0.7) !important;
+    pointer-events: none !important;
+    user-select: none !important;
+}
+
+/* Cabecera */
+.mcv-rdna-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-bottom: 1px solid rgba(255, 46, 99, 0.25) !important;
+    padding-bottom: 8px !important;
+}
+
+.mcv-rdna-title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    color: #ff2e63 !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.2px !important;
+    text-transform: uppercase !important;
+}
+
+.mcv-rdna-badge {
+    color: #00ff88 !important;
+    font-size: 9.5px !important;
+    font-family: "JetBrains Mono", monospace !important;
+    font-weight: 700 !important;
+    background: rgba(0, 255, 136, 0.1) !important;
+    border: 1px solid rgba(0, 255, 136, 0.35) !important;
+    padding: 3px 8px !important;
+    border-radius: 4px !important;
+}
+
+/* Tarjetas Modulares */
+.mcv-rdna-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+}
+
+.mcv-rdna-card {
+    background: rgba(22, 3, 11, 0.75) !important;
+    border: 1px solid rgba(255, 46, 99, 0.22) !important;
+    border-radius: 6px !important;
+    padding: 8px 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    box-sizing: border-box !important;
+}
+
+.mcv-rdna-card-head {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.mcv-rdna-card-label {
+    font-size: 10px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.6px !important;
+    color: #ff2e63 !important;
+    text-transform: uppercase !important;
+}
+
+.mcv-rdna-ctrl-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+}
+
+/* Switches */
+.mcv-rdna-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    cursor: pointer !important;
+}
+
+.mcv-rdna-switch {
+    width: 32px !important;
+    height: 16px !important;
+    background: #110206 !important;
+    border: 1px solid #4a0c1a !important;
+    border-radius: 9px !important;
+    position: relative !important;
+    transition: all 0.2s ease !important;
+}
+
+.mcv-rdna-switch.active {
+    background: #ff2e63 !important;
+    border-color: #ff2e63 !important;
+    box-shadow: 0 0 8px rgba(255, 46, 99, 0.6) !important;
+}
+
+.mcv-rdna-switch::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 12px !important;
+    height: 12px !important;
+    background: #ffffff !important;
+    border-radius: 50% !important;
+    top: 1px !important;
+    left: 2px !important;
+    transition: transform 0.2s ease !important;
+}
+
+.mcv-rdna-switch.active::after {
+    transform: translateX(14px) !important;
+}
+
+/* Selectores */
+.mcv-rdna-select {
+    background: #0d0206 !important;
+    color: #00d4ff !important;
+    border: 1px solid rgba(0, 212, 255, 0.35) !important;
+    border-radius: 4px !important;
+    font-size: 9.5px !important;
+    font-weight: bold !important;
+    padding: 3px 8px !important;
+    outline: none !important;
+    cursor: pointer !important;
+}
+.mcv-rdna-select:hover {
+    border-color: #00d4ff !important;
+}
+
+/* Slider Track y Thumb */
+.mcv-rdna-slider-wrap {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    flex: 1 !important;
+}
+
+.mcv-rdna-slider {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    flex: 1 !important;
+    height: 6px !important;
+    background: #110207 !important;
+    border: 1px solid rgba(255, 46, 99, 0.4) !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 4px rgba(255, 46, 99, 0.2) !important;
+    outline: none !important;
+    cursor: pointer !important;
+}
+
+.mcv-rdna-slider::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    background: radial-gradient(circle at 35% 35%, #ffffff 0%, #ff2e63 60%, #990026 100%) !important;
+    border: 1.5px solid #ffffff !important;
+    cursor: pointer !important;
+    box-shadow: 0 0 10px #ff2e63, 0 0 18px rgba(255, 46, 99, 0.9) !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+.mcv-rdna-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2) !important;
+    box-shadow: 0 0 14px #ff2e63, 0 0 24px rgba(255, 46, 99, 1) !important;
+}
+
+.mcv-rdna-slider-val {
+    font-size: 10.5px !important;
+    font-family: "JetBrains Mono", monospace !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    background: #0e0206 !important;
+    border: 1px solid rgba(255, 46, 99, 0.3) !important;
+    padding: 2px 6px !important;
+    border-radius: 3px !important;
+    min-width: 40px !important;
+    text-align: center !important;
+}
+
+/* Inputs numéricos manuales */
+.mcv-rdna-num-input {
+    width: 64px !important;
+    height: 22px !important;
+    background: #0d0206 !important;
+    border: 1px solid rgba(0, 212, 255, 0.35) !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+    font-family: monospace !important;
+    font-weight: 700 !important;
+    color: #00d4ff !important;
+    text-align: center !important;
+    outline: none !important;
+}
+.mcv-rdna-num-input:focus {
+    border-color: #00d4ff !important;
+    box-shadow: 0 0 6px rgba(0, 212, 255, 0.4) !important;
+}
+
+/* HUD Telemetry */
+.mcv-rdna-hud {
+    background: radial-gradient(circle at 50% 30%, #1c040d 0%, #080104 100%) !important;
+    border: 1px solid rgba(255, 46, 99, 0.4) !important;
+    box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.9), 0 0 16px rgba(255, 46, 99, 0.15) !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    box-sizing: border-box !important;
+}
+
+.mcv-rdna-hud-head {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-bottom: 1px solid rgba(255, 46, 99, 0.25) !important;
+    padding-bottom: 5px !important;
+}
+
+.mcv-rdna-hud-label {
+    font-size: 9.5px !important;
+    font-weight: 800 !important;
+    font-family: "JetBrains Mono", monospace !important;
+    color: #ff2e63 !important;
+    letter-spacing: 0.9px !important;
+    text-transform: uppercase !important;
+}
+
+.mcv-rdna-hud-status {
+    font-size: 8.5px !important;
+    font-family: "JetBrains Mono", monospace !important;
+    font-weight: 700 !important;
+    color: #ffaa00 !important;
+}
+.mcv-rdna-hud-status.ready {
+    color: #00ff88 !important;
+}
+
+.mcv-rdna-hud-main {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+}
+
+.mcv-rdna-hud-dims {
+    font-size: 16px !important;
+    font-weight: 900 !important;
+    font-family: "JetBrains Mono", monospace !important;
+    color: #ffffff !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.6) !important;
+}
+.mcv-rdna-hud-dims span {
+    color: #00d4ff !important;
+}
+
+.mcv-rdna-hud-ratio {
+    font-size: 10px !important;
+    font-family: "JetBrains Mono", monospace !important;
+    font-weight: 700 !important;
+    color: #ff2e63 !important;
+    background: rgba(255, 46, 99, 0.12) !important;
+    border: 1px solid rgba(255, 46, 99, 0.3) !important;
+    padding: 1px 6px !important;
+    border-radius: 3px !important;
+}
+
+.mcv-rdna-hud-meta {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background: rgba(8, 1, 4, 0.65) !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    border: 1px solid rgba(255, 46, 99, 0.15) !important;
+    font-size: 8.5px !important;
+    font-family: "JetBrains Mono", monospace !important;
+    color: #00d4ff !important;
+}
+.mcv-rdna-hud-meta b {
+    color: #00d4ff !important;
+    font-weight: 800 !important;
+}
+.mcv-rdna-hud-meta span {
+    color: #00d4ff !important;
+}
+
+/* Estados Deshabilitados */
+.mcv-rdna-disabled {
+    opacity: 0.28 !important;
+    pointer-events: none !important;
+    filter: grayscale(1) !important;
+    transition: opacity 0.2s ease, filter 0.2s ease !important;
+}
+
+.mcv-rdna-num-input:disabled {
+    background: #060103 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    color: #3e4f5e !important;
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+}
+
+.mcv-rdna-slider:disabled {
+    cursor: not-allowed !important;
+    background: #0a0204 !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: none !important;
+}
+
+.mcv-rdna-slider:disabled::-webkit-slider-thumb {
+    background: #25070f !important;
+    border-color: #555555 !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+}

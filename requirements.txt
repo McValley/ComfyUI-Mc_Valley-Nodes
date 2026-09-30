@@ -1,0 +1,8 @@
+psutil
+transformers
+sentencepiece
+safetensors
+Pillow
+numpy
+torchaudio
+imageio-ffmpeg

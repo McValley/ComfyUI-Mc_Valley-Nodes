@@ -1,0 +1,241 @@
+/* ==========================================================================
+ *  MC_VALLEY RESOURCE LINK HUB — EMERALD TERMINAL THEME
+ *  ========================================================================== */
+
+.mcv-rlh-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    padding: 10px 12px 12px 12px !important;
+    background: radial-gradient(circle at 50% 0%, #021a10 0%, #010804 100%) !important;
+    border-radius: 9px !important;
+    border: 1.5px solid rgba(0, 255, 136, 0.45) !important;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.16), inset 0 0 14px rgba(0, 0, 0, 0.9) !important;
+    width: 100% !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    user-select: none !important;
+    overflow: hidden !important;
+    transition: opacity 0.25s ease, filter 0.25s ease !important;
+}
+
+/* Bypass */
+.mcv-rlh-bypassed {
+    opacity: 0.45 !important;
+    filter: grayscale(0.5) brightness(0.65) !important;
+    pointer-events: none !important;
+    user-select: none !important;
+}
+
+/* Header */
+.mcv-rlh-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-bottom: 1px solid rgba(0, 255, 136, 0.25) !important;
+    padding-bottom: 6px !important;
+    flex-shrink: 0 !important;
+}
+
+.mcv-rlh-title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    color: #00ff88 !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+}
+
+.mcv-rlh-badge {
+    color: #00ff88 !important;
+    font-size: 9px !important;
+    font-family: "JetBrains Mono", monospace !important;
+    font-weight: 700 !important;
+    background: rgba(0, 255, 136, 0.1) !important;
+    border: 1px solid rgba(0, 255, 136, 0.35) !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+}
+
+/* List */
+.mcv-rlh-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+    flex: 1 !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+}
+
+.mcv-rlh-list::-webkit-scrollbar {
+    width: 4px !important;
+}
+.mcv-rlh-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 136, 0.35) !important;
+    border-radius: 4px !important;
+}
+
+/* Card item */
+.mcv-rlh-item {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    background: rgba(4, 22, 13, 0.85) !important;
+    border: 1.2px solid rgba(0, 255, 136, 0.3) !important;
+    border-left: 3.5px solid #00ff88 !important;
+    border-radius: 6px !important;
+    padding: 7px 9px !important;
+    box-sizing: border-box !important;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+    flex-shrink: 0 !important;
+}
+
+.mcv-rlh-item-head {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 6px !important;
+}
+
+.mcv-rlh-input-desc {
+    flex: 1 !important;
+    height: 24px !important;
+    background: #020d06 !important;
+    border: 1px solid rgba(0, 255, 136, 0.4) !important;
+    border-radius: 3px !important;
+    color: #00ff88 !important;
+    font-size: 10.5px !important;
+    font-weight: 700 !important;
+    padding: 0 7px !important;
+    outline: none !important;
+}
+
+.mcv-rlh-btn-del {
+    background: rgba(255, 77, 77, 0.1) !important;
+    border: 1px solid rgba(255, 77, 77, 0.3) !important;
+    border-radius: 3px !important;
+    color: #ff4d4d !important;
+    font-size: 9.5px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    padding: 3px 8px !important;
+    line-height: 1 !important;
+    transition: all 0.15s ease !important;
+}
+.mcv-rlh-btn-del:hover {
+    background: rgba(255, 77, 77, 0.25) !important;
+    border-color: #ff4d4d !important;
+}
+
+/* URL row */
+.mcv-rlh-item-body {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.mcv-rlh-input-url {
+    flex: 1 !important;
+    height: 23px !important;
+    background: #010603 !important;
+    border: 1px solid rgba(0, 255, 136, 0.25) !important;
+    border-radius: 3px !important;
+    color: #9ebdb0 !important;
+    font-size: 9.5px !important;
+    font-family: monospace !important;
+    padding: 0 6px !important;
+    outline: none !important;
+}
+.mcv-rlh-input-url:focus {
+    border-color: #00ff88 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 6px rgba(0, 255, 136, 0.3) !important;
+}
+
+.mcv-rlh-btn-open {
+    height: 23px !important;
+    padding: 0 10px !important;
+    cursor: pointer !important;
+    background: linear-gradient(180deg, rgba(0, 255, 136, 0.25) 0%, rgba(0, 150, 80, 0.15) 100%) !important;
+    color: #00ff88 !important;
+    border: 1.2px solid #00ff88 !important;
+    border-radius: 3px !important;
+    font-size: 9.5px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    white-space: nowrap !important;
+    outline: none !important;
+    transition: all 0.15s ease !important;
+}
+.mcv-rlh-btn-open:hover {
+    filter: brightness(1.25) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Path / Notes */
+.mcv-rlh-item-notes {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background: rgba(1, 10, 5, 0.8) !important;
+    padding: 3px 6px !important;
+    border-radius: 4px !important;
+    border: 1px dashed rgba(0, 255, 136, 0.25) !important;
+}
+
+.mcv-rlh-notes-icon {
+    color: #00ff88 !important;
+    font-size: 9.5px !important;
+    font-weight: bold !important;
+    white-space: nowrap !important;
+    font-family: "JetBrains Mono", monospace !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 3px !important;
+}
+
+.mcv-rlh-input-notes {
+    flex: 1 !important;
+    background: transparent !important;
+    border: none !important;
+    color: #e2fbe8 !important;
+    font-size: 9.5px !important;
+    font-family: "JetBrains Mono", monospace !important;
+    outline: none !important;
+}
+.mcv-rlh-input-notes::placeholder {
+    color: rgba(158, 189, 176, 0.5) !important;
+}
+
+/* Footer: Add button */
+.mcv-rlh-footer {
+    display: flex !important;
+    margin-top: 4px !important;
+    flex-shrink: 0 !important;
+}
+
+.mcv-rlh-btn-add {
+    flex: 1 !important;
+    height: 28px !important;
+    cursor: pointer !important;
+    background: rgba(0, 255, 136, 0.1) !important;
+    color: #00ff88 !important;
+    border: 1.2px dashed rgba(0, 255, 136, 0.45) !important;
+    border-radius: 5px !important;
+    font-size: 10px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.8px !important;
+    outline: none !important;
+    transition: all 0.15s ease !important;
+}
+.mcv-rlh-btn-add:hover {
+    background: rgba(0, 255, 136, 0.2) !important;
+    border-style: solid !important;
+}
