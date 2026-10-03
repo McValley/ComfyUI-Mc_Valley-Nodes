@@ -19,6 +19,9 @@ All interactive nodes feature responsive Cyberpunk canvas styling, locked UI dim
 * **Frame Range Inspector & Trimmer:** Visual frame navigator, thumbnail sprite inspector, and sample range trimmer.
 * **Empty Latent Div32:** Latent canvas generator strictly constrained to 32-pixel mathematical alignment with live HUD preview.
 
+### 🎛️ Workflow Automation & Canvas Control
+* **Group Bypasser Studio:** Dynamic graph utility that automatically scans canvas groups and builds independent on-node bypass switches. Features selective exclusion (`[✕]`) to decouple groups without deleting them from the graph, state synchronization across multiple instances, real-time UI cleanup when groups are removed, and recursive state propagation into subgraphs and inner nodes.
+
 ### ✍️ Prompt Engineering & Hub
 * **Structured Prompt Builder Studio:** Modular prompt architect allowing users to dynamically spawn, label, and delete structured text blocks (`+ ADD PROMPT`) with automatic token sanitation and unified concatenated output.
 * **Prompt Layer Stacker:** Vertical layer-based prompt architect with dynamic canvas scaling and automatic token cleaning.
@@ -42,7 +45,6 @@ All interactive nodes feature responsive Cyberpunk canvas styling, locked UI dim
 1. Open a terminal inside your ComfyUI custom nodes directory:
    ```bash
    cd ComfyUI/custom_nodes
-   ```
 
 2. Clone the repository:
    ```bash
