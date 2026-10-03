@@ -201,5 +201,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "McValley_MiniMaxTurboEngine": "MiniMax Turbo Engine Studio"
+    "McValley_MiniMaxTurboEngine": "MiniMax Turbo Engine"
 }

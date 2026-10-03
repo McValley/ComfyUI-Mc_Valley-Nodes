@@ -24,5 +24,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "McValley_GroupBypasserStudio": "Group Bypasser Studio"
+    "McValley_GroupBypasserStudio": "Group Bypasser"
 }

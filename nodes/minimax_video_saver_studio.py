@@ -270,5 +270,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "McValley_MiniMaxVideoSaverStudio": "MiniMax Video Saver Studio"
+    "McValley_MiniMaxVideoSaverStudio": "MiniMax Video Saver"
 }
