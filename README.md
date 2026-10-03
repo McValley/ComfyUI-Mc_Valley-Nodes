@@ -9,9 +9,9 @@ All interactive nodes feature responsive Cyberpunk canvas styling, locked UI dim
 ## 📦 Active Suite Architecture & Included Nodes
 
 ### 🎬 Video Production & MiniMax Tools
-* **MiniMax Turbo Engine Studio:** Consolidated Turbo-LoRA engine and multi-step (4/6/8 steps) diffusion driver with dual-schedule clock synchronization and frugal memory management.
+* **MiniMax Turbo Engine:** Consolidated Turbo-LoRA engine and multi-step (4/6/8 steps) diffusion driver with dual-schedule clock synchronization and frugal memory management.
 * **MiniMax Sampler Studio:** All-in-one consolidated sampler for MiniMax H3 FLOW_AV with native sigmas resolution, pure single-pass CFGGuider, noise injection over NestedTensors, and automated ROCm VRAM purges.
-* **MiniMax Video Saver Studio:** High-performance video export module featuring integrated directory isolation (`output/MiniMax_Videos/`), clean metadata injection, native 16-bit PCM to AAC 192k audio multiplexing, and a fully elastic HTML5 in-canvas previewer with volume controls.
+* **MiniMax Video Saver:** High-performance video export module featuring integrated directory isolation (`output/MiniMax_Videos/`), clean metadata injection, native 16-bit PCM to AAC 192k audio multiplexing, and a fully elastic HTML5 in-canvas previewer with volume controls.
 * **Fast MiniMax I2V:** Optimized high-throughput Image-to-Video generation pipeline with dynamic parameter switching and Vision Encoder bypass.
 * **MiniMax Direct LoRA:** On-canvas dynamic LoRA stacker and conditioning injector.
 * **MiniMax Latent Upscaler Studio:** Native high-resolution latent video enhancer and temporal scaler.
@@ -20,7 +20,7 @@ All interactive nodes feature responsive Cyberpunk canvas styling, locked UI dim
 * **Empty Latent Div32:** Latent canvas generator strictly constrained to 32-pixel mathematical alignment with live HUD preview.
 
 ### 🎛️ Workflow Automation & Canvas Control
-* **Group Bypasser Studio:** Dynamic graph utility that automatically scans canvas groups and builds independent on-node bypass switches. Features selective exclusion (`[✕]`) to decouple groups without deleting them from the graph, state synchronization across multiple instances, real-time UI cleanup when groups are removed, and recursive state propagation into subgraphs and inner nodes.
+* **Group Bypasser:** Dynamic graph utility that automatically scans canvas groups and builds independent on-node bypass switches. Features selective exclusion (`[✕]`) to decouple groups without deleting them from the graph, state synchronization across multiple instances, real-time UI cleanup when groups are removed, and recursive state propagation into subgraphs and inner nodes.
 
 ### ✍️ Prompt Engineering & Hub
 * **Structured Prompt Builder Studio:** Modular prompt architect allowing users to dynamically spawn, label, and delete structured text blocks (`+ ADD PROMPT`) with automatic token sanitation and unified concatenated output.
